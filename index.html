@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Form Validation System</title>
-</head>
-<body>
-    <form action="">
-        <div class="formdesign" id="name">
+  </head>
+  <body>
+    <h1>Form Validation System</h1>
+    <!-- <p>Enter your name in the form below:</p>
+    <p class="formerror">This is a form error message.</p>
+    <p class="formsuccess">This is a form success message.</p>  
+    <p class="formwarning">This is a form warning message.</p>
+    <p class="forminfo">This is a form info message.</p>
+    <p class="forminfo">This is another form info message.</p>
+     -->
+    <form action="/myaction.java" name="myFrom" onsubmit="return validateForm()" method="post">
+      <div class="formdesign" id="name">
+        Full Name: <input type="text" name="fname" required /><b><span class="formerror"></span></b>
+      </div>
 
-             Name: <input type="text" name="name">
-        </div>
+      <div class="formdesign" id="email">
+        Email ID: <input type="email" name="femail" required /><b><span class="formerror"></span></b>
+      </div>
+
+      <div class="formdesign" id="phone">
+        Phone Number: <input type="phone" name="fphone" required /><b><span class="formerror"></span></b>
+      </div>
+
+      <div class="formdesign" id="Password">
+        Password: <input type="password" name="fpass" required /><b><span class="formerror"></span></b>
+      </div>
+      
+      <div class="formdesign" id="confirmPassword">
+        Confirm Password: <input type="password" name="fcpass" required /><b><span class="formerror"></span></b>
+      </div>
+
+      <input type="submit" class="btn" value="Submit" >
     </form>
-</body>
+
+    <script src="script.js"></script>
+  </body>
+    
 </html>
