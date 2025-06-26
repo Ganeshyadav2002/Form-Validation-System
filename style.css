@@ -1,15 +1,16 @@
 body{
-    padding: 50px 10px;
+    color: white;
+    background-color: #001E26;
 }
 
-.fromdesign{
-    font-size: 1.5rem;
+.formdesign{
+    font-size: 1.2rem;
 }
 
-.fromdesign input{
-    width: 50%;
+.formdesign input{
+    width: 80%;
     padding: 12px 20px;
-    border: 5px solid rgb(34, 0, 255);
+    border: 5px solid #001E26;
     margin: 14px;
     border-radius: 4px;
     font-size: 15px;
@@ -26,3 +27,37 @@ body{
     margin: 22px 10px;
 
 }
+
+.hero-section{
+    background-image:url(banner.jpg) ;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    /* min-height: 100vh;
+    max-width: 100vw;
+    position: relative;
+    text-align: center; */
+
+}
+
+.hero-text{
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-text > h1{
+    font-size: 40px; 
+    padding-bottom: 10px;
+}
+.form-section{
+    background-color:rgb(99 64 62 / 92%);
+    padding: 30px;
+    border-radius: 25px;
+    max-width: 25rem;
+    margin:auto;
+    transform: translate(0%,40%);
+}
+    
